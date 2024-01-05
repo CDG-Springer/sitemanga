@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+@font-face {
+    font-family: Jujutsu Kaisen;
+    src: url('fonts/JujutsuKaisen.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SpaceMono;
+    src: url('fonts/SpaceMono.ttf') format('truetype');
+}
+
+::-webkit-scrollbar {
+    background-color: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #383838;
+  }
+
+body{
+    background: #080808;
+    overflow-x: hidden;
+    font-family: 'SpaceMono';
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    font-family: 'Jujutsu Kaisen';
+    font-size: 2em;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+#mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+#mobile-menu div{
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background-color: white;
+}
+
+nav{
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 7rem;
+    overflow: hidden;
+    font-family: 'SpaceMono';
+}
+
+#navlist{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li{
+    margin-right: 1rem;
+}
+
+.lockscroll{
+    overflow-y: hidden;
+}
+
+
+.footer {
+    background-color: #090909;
+    padding: 30px 0;
+}
+  
+.containerfooter {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+  .footer-text {
+    color: #989898;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 999px) {
+
+    nav{
+        flex-direction: row;
+    }
+
+    #navlist{
+        position: absolute;
+        flex-direction: column;
+        top: 12vh;
+        right: 0;
+        width: 100vw;
+        height: 90vh;
+        z-index: 2;
+        align-items: center;
+        justify-content: space-around;
+        transition: all 0.3s ease-in-out;
+        background-color: #080808;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        /* opacity: 0; */
+    }
+
+    #mobile-menu{
+        display: block;
+    }
+
+    .navlist-visible{
+        transform: translateX(0%);
+    }
+
+    .navlist-hidden{
+        transform: translateX(100%);
+        display: hidden;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider-wrapper{
+            position: relative;
+            max-width: 31rem;
+            margin: 0;
+        }
+
+        .slider{
+            display: flex;
+            aspect-ratio: 5 / 8;
+            overflow-x: auto;
+            scroll-snap-type: both mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .slider img{
+            flex: 1 0 100%;
+            scroll-snap-align: center;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide1" src="https://cdn.jujutsuyugen.com/chapters/244/02.png" alt="">
+                <img id="slide2" src="https://cdn.jujutsuyugen.com/chapters/244/04.png" alt="">
+                <img id="slide3" src="https://cdn.jujutsuyugen.com/chapters/244/08.png" alt="">
+            </div>
+            <div class="slider-nav">
+                <a href="" id="slide-1"></a>
+                <a href="" id="slide-2"></a>
+                <a href="" id="slide-3"></a>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

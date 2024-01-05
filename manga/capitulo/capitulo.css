@@ -1,0 +1,73 @@
+body, html{
+    height: 100%;
+}
+
+body{
+    background-color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 33rem;
+    margin: 0;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 5.3 / 8;
+    overflow-x: auto;
+    scroll-snap-type: both mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: center;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 0.5rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.7rem;
+    height: 0.7rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+/* Para telas menores que 600px */
+@media screen and (max-width: 600px) {
+    .slider-wrapper {
+        max-width: 100%; /* Redimensiona para ocupar toda a largura */
+        overflow-x: auto; /* Adiciona barra de rolagem horizontal se necessário */
+    }
+
+    .slider img {
+        width: 100%; /* As imagens ocuparão toda a largura disponível */
+        height: auto; /* A altura se ajustará proporcionalmente à largura */
+    }
+
+    .slider-nav{
+        visibility: hidden;
+    }
+}

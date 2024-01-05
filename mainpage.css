@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+#sessaoSlider{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://cdn.discordapp.com/attachments/1097649289167118376/1183199667366940734/Untitled-1.png?ex=6587778f&is=6575028f&hm=e2dfdf4ac933ac47c24080a3802fd7aee359e320c4f3608fc9e87884d70e8109&');
+    background-position: center;
+    background-size: 100%;
+    padding: 2rem;
+    
+    -webkit-box-shadow: inset 0px 8px 33px 0px rgba(8,8,8,1), inset 0px -8px 33px 0px rgba(8,8,8,1);
+    box-shadow: inset 0 25px 15px -10px #080808, inset 0 -25px 15px -10px #080808;
+
+
+}
+
+.caroussel-frontpage{
+    max-width: 60rem;
+    -webkit-box-shadow: 0px 0px 15px 7px #000000; 
+    box-shadow: 0px 0px 15px 7px #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-frontpage{
+    display: flex;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.slider-frontpage img{
+    width: 100%;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.controls-frontpage .arrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-50%);
+}
+
+.controls-frontpage .arrow i{
+    font-size: 3rem;
+}
+
+.controls-frontpage .arrow.left{
+    left: 10px;
+}
+
+.controls-frontpage .arrow.right{
+    right: 10px;
+}
+
+#sobreSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.tituloSobre{
+    font-size: 3rem;
+    font-family: 'Jujutsu Kaisen';
+}
+
+.textoSobre{
+    padding-top: 2rem;
+    width: 90%;
+}
+
+@media (max-width: 999px) {
+
+    .caroussel-frontpage{
+        min-width: 100vw;
+    }
+
+    .textoSobre{
+        height: 20rem;
+        overflow-y: auto;
+    }
+
+    .membros{
+        overflow-x: auto;
+    }
+}
