@@ -75,6 +75,37 @@
     width: 90%;
 }
 
+#divisao{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 53%);
+    width: 100vw;
+    padding: 2rem 0;
+    background-color: #080808;
+}
+
+#membrosContainer{
+    margin: 5rem 0;
+    background-image: url('https://cdn.discordapp.com/attachments/1097649289167118376/1206355690789273691/23.png?ex=65dbb549&is=65c94049&hm=05e7c032c1fab43f55202d4462d3ff52a62a9ad6e0ceb5a6b6012485c7411948&');
+    background-size: cover;
+    height: 40rem;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+}
+
+#membrosConteudo{
+    background: #181818;
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem
+}
+
+.textMembro{
+    width: 20rem;
+}
+
 @media (max-width: 999px) {
 
     .caroussel-frontpage{
