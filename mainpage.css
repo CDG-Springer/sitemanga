@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
+#loadingContainer{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: #080808;
+    flex-direction: column;
+}
+
+#loadingImage{
+    width: 10rem;
+}
+
 #sessaoSlider{
     margin-top: 2rem;
     display: flex;
@@ -86,7 +106,7 @@
     margin: 5rem 0;
     background-image: url('https://cdn.discordapp.com/attachments/1097649289167118376/1206355690789273691/23.png?ex=65dbb549&is=65c94049&hm=05e7c032c1fab43f55202d4462d3ff52a62a9ad6e0ceb5a6b6012485c7411948&');
     background-size: cover;
-    height: 40rem;
+    padding: 0 0 5rem 0;
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -106,7 +126,23 @@
     width: 20rem;
 }
 
+@media (max-width: 650px) {
+
+    #membrosConteudo{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .imagemMembro{
+        width: 10rem;
+    }
+}
+
 @media (max-width: 999px) {
+
+    #membrosContainer{
+        align-items: center;
+    }
 
     .caroussel-frontpage{
         min-width: 100vw;
